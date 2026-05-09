@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+
+	<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="common/html5shiv.js"></script>
+			<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<![endif]-->
+
+	<!-- 최신 IE 렌더링 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<meta charset="utf-8">
+	<!-- 뷰포트 -->
+	<meta name="viewport" content="width=device-width, initial-scale=0.3, minimum-scale=0.2, maximum-scale=1">
+
+	<!--엣지에서 전화번호에 자동으로 링크가 생성되는 현상 방지-->
+	<meta name="format-detection" content="telephone=no" />
+
+	<meta name="Generator" content="EditPlus®">
+	<meta name="Author" content="youngseo yook">
+
+	<title>ROC Auto System</title>
+	<meta name="Description"
+		content="Combined heat and power generator, air compressor, engine type water pump, gas engine, electronic control devices">
+
+	<meta property="og:title" content="ROC Auto System">
+	<meta property="og:description"
+		content="Combined heat and power generator, air compressor, engine type water pump, gas engine, electronic control devices">
+
+	<link rel="stylesheet" type="text/css" href="common/reset.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+	<link rel="stylesheet" type="text/css" href="css/basic.css">
+	<link rel="stylesheet" type="text/css" href="css/sub.css">
+
+	<script src="common/jquery-3.2.1.min.js"></script>
+	<script src="js/basic.js"></script>
+	<script src="js/sub_tab.js"></script>
+
+</head>
+
+<body class="sub bus eng">
+	<header>
+<!--=====================================================================================-->
+		<nav>
+			<div class="lang">
+				<ul>
+					<li><a href="../kor/index.html">KO</a></li>
+					<li><a href="./index.html">EN</a></li>
+				</ul>
+			</div>
+
+			<h1><a href="index.html"><img src="images/logo.png" alt="알오씨오토시스템 홈페이지 바로가기" /></a></h1>
+
+			<ul class="gnb">
+				<li><a>COMPANY</a>
+					<ul class="snb snb1">
+						<li><a href="com_greeting.html">Greetings</a></li>
+						<li><a href="com_history.html">History</a></li>
+						<li><a href="com_certification.html">Company Patents</a></li>
+						<li><a href="com_location.html">Location</a></li>
+					</ul>
+				</li>
+
+				<li><a>ELECTRIFICATION</a>
+					<ul class="snb snb2">
+						<li><a href="bus01.html">Business Overview</a></li>
+						<li><a href="bus4.html">Video</a></li>
+						<li><a href="bus02.html">A/S System</a></li>
+						<li><a href="bus03.html">Partners</a></li>
+						<li><a href="http://excionglobal.com" target="_blank">Sister Company</a></li>
+
+					</ul>
+				</li>
+				<li><a>SOLUTIONS</a>
+					<ul class="snb snb2">
+						<li><a href="solution01.html">Absorption Chiller</a></li>
+						<li><a href="solution02.html">Steam Generator</a></li>
+						<li><a href="solution03.html">Cooling System</a></li>
+						<li><a href="solution04.html">District Heating</a></li>
+						<li><a href="solution05.html">Reference Projects</a></li>
+					</ul>
+				</li>
+				<li><a>PRODUCTS</a>
+					<ul class="snb snb3">
+						<li><a href="product01.html">CHP 225kW</a></li>
+						<li><a href="product02.html">CHP 50kW</a></li>
+						<li><a href="product03.html">CHA 300Ps</a></li>
+						<li><a href="product04.html">CHW 50Ps</a></li>
+					</ul>
+				</li>
+				<li><a>SERVICE</a>
+					<ul class="snb snb4">
+						<li><a href="https://rocauto.netlify.app/board/empty.html">Management</a></li>
+						<li><a href="ser_data.html">Archive</a></li>
+						<li><a href="https://rocauto.netlify.app/board/empty.html">Contact us</a></li>
+					</ul>
+				</li>
+			</ul>
+
+		</nav>
+<!--=====================================================================================-->
+		<nav>
+			<div class="lang">
+				<ul>
+					<li><a href="../kor/index.html">KO</a></li>
+					<li><a href="./index.html">EN</a></li>
+				</ul>
+			</div>
+
+			<h1><a href="index.html"><img src="images/logo.png" alt="알오씨오토시스템 홈페이지 바로가기" /></a></h1>
+
+			<ul class="gnb">
+				<li><a>COMPANY</a>
+					<ul class="snb snb1">
+						<li><a href="com_greeting.html">Greetings</a></li>
+						<li><a href="com_history.html">History</a></li>
+						<li><a href="com_certification.html">Company Patents</a></li>
+						<li><a href="com_location.html">Location</a></li>
+					</ul>
+				</li>
+
+				<li><a>ELECTRIFICATION</a>
+					<ul class="snb snb2">
+						<li><a href="bus01.html">Business Overview</a></li>
+						<li><a href="bus4.html">Video</a></li>
+						<li><a href="bus02.html">A/S System</a></li>
+						<li><a href="bus03.html">Partners</a></li>
+						<li><a href="http://excionglobal.com" target="_blank">Sister Company</a></li>
+
+					</ul>
+				</li>
+				<li><a>SOLUTIONS</a>
+					<ul class="snb snb2">
+						<li><a href="solution01.html">Absorption Chiller</a></li>
+						<li><a href="solution02.html">Steam Generator</a></li>
+						<li><a href="solution03.html">Cooling System</a></li>
+						<li><a href="solution04.html">District Heating</a></li>
+						<li><a href="solution05.html">Reference Projects</a></li>
+					</ul>
+				</li>
+				<li><a>PRODUCTS</a>
+					<ul class="snb snb3">
+						<li><a href="product01.html">CHP 225kW</a></li>
+						<li><a href="product02.html">CHP 50kW</a></li>
+						<li><a href="product03.html">CHA 300Ps</a></li>
+						<li><a href="product04.html">CHW 50Ps</a></li>
+					</ul>
+				</li>
+				<li><a>SERVICE</a>
+					<ul class="snb snb4">
+						<li><a href="https://rocauto.netlify.app/board/empty.html">Management</a></li>
+						<li><a href="ser_data.html">Archive</a></li>
+						<li><a href="https://rocauto.netlify.app/board/empty.html">Contact us</a></li>
+					</ul>
+				</li>
+			</ul>
+
+		</nav>
+<!--=====================================================================================-->
+		<!--	<div class="snb_bg"></div>-->
+	</header>
+
+	<section class="visual">
+		<h2>BUSINESS </h2>
+		<div class="lnb_wrap">
+			<aside class="layout_center">
+				<div class="tnb">
+					<div class="tnb_inner">
+						<div class="home">
+							<a href="index.html">
+							</a>
+						</div>
+						<div class="tnb_sub">
+							<a>
+								BUSINESS
+							</a>
+
+						</div>
+						<div class="tnb_dest">
+							<a>
+								Business Overview
+							</a>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</section>
+	<!--visual-->
+	<div class="contents_wrap">
+		<section class="contents layout_center px1200">
+			<div class="sect-wrap">
+				<div class="pager row">
+					<a class="prev"></a>
+					<h3>Business Overview</h3>
+					<a class="next"></a>
+				</div>
+			</div>
+			<!--sect-wrap-->
+			<div class="content sect1" id="eng-01">
+				<div class="dsc">
+					<dl>
+						<dt>Business Goal</dt>
+						<dd>As part of the metropolitan area air environment improvement project, we are carrying out an
+							engine replacement subsidy program to reduce construction machinery emissions.</dd>
+					</dl>
+					<dl>
+						<dt>Target Area</dt>
+						<dd>Nationwide (From Seoul to Jeju)</dd>
+					</dl>
+					<dl>
+						<dt>Target Models</dt>
+						<dd>Forklifts manufactured before 2006 (up to 2006 models with identical engine types)</dd>
+					</dl>
+					<dl>
+						<dt>Engine Replacement Time</dt>
+						<dd>Takes 3 days</dd>
+					</dl>
+					<dl>
+						<dt>Replacement Cost</dt>
+						<dd>100% Government Supported</dd>
+					</dl>
+				</div>
+
+
+				<table>
+					<thead>
+						<tr>
+							<th>Construction Machinery Name</th>
+							<th>Manufacturer</th>
+							<th>Target Forklift Models</th>
+							<th>Target Year</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th rowspan="3">Forklift</th>
+							<th>Doosan (Daewoo)</th>
+							<td>D Model 2~3 tons / LD Model 2~3 tons</td>
+							<td rowspan="6" style="position:relative; top:150px;">Vehicles manufactured until 2006</td>
+						</tr>
+						<tr>
+							<th>Samsung (CLARK)</th>
+							<td>FX Model 2~3 tons</td>
+						</tr>
+						<tr>
+							<th>Hyundai</th>
+							<td>HDF Model 2~3 tons</td>
+						</tr>
+
+						<tr>
+							<th rowspan="3">Excavator</th>
+							<th>Doosan (Daewoo)</th>
+							<td>All SOLAR50~55 series models, all DH028 series models</td>
+						</tr>
+						<tr>
+							<th>Volvo (Samsung)</th>
+							<td>All MX3, MX55 series models, all EC55 series models</td>
+						</tr>
+						<tr>
+							<th>Hyundai (Samho)</th>
+							<td>All ROBEX500~555 series models, all HX50 series models</td>
+						</tr>
+
+
+
+
+					</tbody>
+				</table>
+
+
+			</div>
+			<!--content-->
+			<div class="sect-wrap">
+				<div class="pager row">
+					<a class="prev"></a>
+					<h3>Application and Registration Process</h3>
+					<a class="next"></a>
+				</div>
+			</div>
+			<div class="content sect1" id="eng-02">
+
+				<div class="row fifth center">
+					<div class="col">
+						<div class="dsc">
+							<div class="imgbox"></div>
+							<h4>01</h4>
+							<p>Submit Application <br>
+								(By mail, in person, or <br>via sales representative) <br>
+								<a href="tel:031-270-6358">Contact: <b>031-270-6358</b></a>
+							</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="dsc">
+							<div class="imgbox"></div>
+							<h4>02</h4>
+							<p>Notification of Selection <br>(Local Gov.)</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="dsc">
+							<div class="imgbox"></div>
+							<h4>03</h4>
+							<p>Preliminary Inspection <br>(ROC)</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="dsc">
+							<div class="imgbox"></div>
+							<h4>04</h4>
+							<p>Vehicle Intake & Engine Replacement <br>(ROC)</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="dsc">
+							<div class="imgbox"></div>
+							<h4>05</h4>
+							<p>Engine Modification Inspection <br>& Vehicle Release (Inspection Station)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--content-->
+
+
+			<div class="sect-wrap">
+				<div class="pager row">
+					<a class="prev"></a>
+					<h3>Reasons to Choose ROC for Engine Replacement</h3>
+					<a class="next"></a>
+				</div>
+			</div>
+			<div class="content sect1" id="eng-02">
+
+				<div class="row quarter center as-icon">
+					<section class="sec1">
+						<div class="sect-wrap">
+							<div class="filp_img_box">
+								<div class="vision_cont icon1">
+									<dl>
+										<dd>The <span style="color:#e50d0d; font-weight:600">only company</span> using
+											<br><span style="color:#e50d0d; font-weight:600">Tier 4 engines</span> (As
+											of 2021)
+										</dd>
+									</dl>
+								</div>
+								<div class="vision_cont icon2">
+									<dl>
+
+										<dd>All parts can be purchased <br>
+											through SsangYong dealerships, <br>
+											<span style="color:#e50d0d; font-weight:600">reducing maintenance
+												costs</span>
+										</dd>
+									</dl>
+								</div>
+
+								<div class="filp_img">
+									<div class="swiper-container">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="images/summary_center.png" alt="LEARN">
+											</div>
+										</div>
+									</div>
+									<div class="filp-pagination"></div>
+								</div>
+
+								<div class="vision_cont icon4">
+									<dl>
+
+										<dd>A <span style="color:#e50d0d; font-weight:600">specialized engine
+												company</span> responsible for <br> engine development, replacement, and
+											after-sales management </dd>
+									</dl>
+								</div>
+
+								<div class="vision_cont icon3">
+									<dl>
+
+										<dd>Prompt <span style="color:#e50d0d; font-weight:600">technical support
+												possible</span> <br>
+											through modification and A/S by partner companies <br>
+											in each city/province</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				</div>
+				<!--content-->
+
+
+
+
+
+				<div class="sect-wrap" id="eng-03">
+					<div class="pager row">
+						<a class="prev"></a>
+						<h3>Advantages After Replacement</h3>
+						<a class="next"></a>
+					</div>
+				</div>
+				<div class="content sect1">
+					<div class="imgbox">
+						<img src="images/ed22-advantage-1.jpg" alt="ED22">
+					</div>
+				</div>
+				<!--content-->
+				<!-- <div class="sect-wrap" id="eng-04" >
+			  <div class="pager row">
+				<a class="prev"></a>
+				<h3>ED22 엔진 소개</h3>
+				<a class="next"></a>
+			  </div>
+			</div>
+			<div class="content sect1" style="padding-top: 50px;">
+			  <div class="row half">
+				<div class="col">
+				  <div class="imgbox">
+					<img src="images/ed22-engine.png" alt="ed22">
+				  </div>
+				</div>
+				<div class="col">
+				<div class="imgbox ed22target">
+					<img src="images/ed22-engine-img.png" alt="ed22">
+				  </div>
+				<table>
+				<thead>
+				<tr>
+				  <th>항목</th>
+				  <th>Spec.</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				  <td>배기량(cc)</td>
+				  <td>2,157</td>
+				</tr>
+				<tr>
+				  <td>Aspiration</td>
+				  <td>Turbo Intercooled</td>
+				</tr>
+				<tr>
+				  <td>최고출력</td>
+				  <td>75PS / 2300 RPM</td>
+				</tr>
+				<tr>
+				  <td>Emission Regulation</td>
+				  <td>Tier3 &amp; Tier4</td>
+				</tr>
+				<tr>
+				  <td>분사 시스템</td>
+				  <td>전자제어 <br>Common Rail <br>(Max. 2000 bar) <br></td>
+				</tr>
+				<tr>
+				  <td>배기 재순환시스템 <br></td>
+				  <td>Cooled EGR With <br>By Pass valve</td>
+				</tr>
+				<tr>
+				  <td>과급시스템</td>
+				  <td>전자식 VGT <br>(Variable Geometry Turbocharger)</td>
+				</tr>
+				<tr>
+				  <td>흡배기제어시스템</td>
+				  <td>가변 스월 밸브</td>
+				</tr>
+				<tr>
+				  <td>후처리장치</td>
+				  <td>DOC (Only Tier4)</td>
+				</tr>
+				<tr>
+				  <td>Application</td>
+				  <td>
+					Fork Lift <br>
+					Gen set <br>
+					Portable Air compressor
+				  </td>
+				</tr>
+				</tbody>
+				</table>
+				</div>
+			  </div>
+			
+			</div> -->
+				<!--content-->
+
+				<div class="sect-wrap" id="eng-05">
+					<div class="pager row">
+						<a class="prev"></a>
+						<h3>Q &amp; A</h3>
+						<a class="next"></a>
+					</div>
+				</div>
+				<div class="content sect1 system">
+					<div class="sect-wrap">
+						<article class="inq">
+							<dl>
+								<dt><b>Q. </b>How much does the replacement cost?</dt>
+								<dd style="display: block;"><b>A. </b>It is fully supported for free as an environmental
+									ministry project, provided on a first-come, first-served basis within the budget
+									limit.</dd>
+							</dl>
+							<dl>
+								<dt><b>Q. </b>How is A/S supported after replacement?</dt>
+								<dd><b>A. </b>It is handled at ROC engine installation shops in each region and
+									supported free of charge for 1 year after modification.</dd>
+							</dl>
+							<dl>
+								<dt><b>Q. </b>Where is the engine replacement done?</dt>
+								<dd><b>A. </b>The replacement is safely done at ROC installation shops in each region.
+								</dd>
+							</dl>
+							<dl>
+								<dt><b>Q. </b>Where can I buy consumables?</dt>
+								<dd><b>A. </b>They can be purchased at regional installation shops, ROC headquarters, or
+									SsangYong parts dealerships.</dd>
+							</dl>
+						</article>
+					</div>
+				</div>
+				<!--content-->
+				<div class="sect-wrap" style="text-align: center; margin: 50px 0 80px;">
+					<a href="../video2/index.html" target="_blank"
+						style="display: inline-block; padding: 15px 50px; background-color: #e50d0d; color: #fff; font-size: 20px; font-weight: bold; border-radius: 5px; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.2); transition: all 0.3s ease;"
+						onmouseover="this.style.backgroundColor='#c40b0b'; this.style.transform='translateY(-2px)'"
+						onmouseout="this.style.backgroundColor='#e50d0d'; this.style.transform='translateY(0)'">Watch
+						Related Video</a>
+				</div>
+		</section><!--contents layout_center-->
+	</div><!--contents_wrap-->
+
+	<footer>
+		<address class="layout_center">
+			<div>
+				<img src="images/logo_f.png" alt="logo" style="margin-right:20px;" />
+			</div>
+			<div>
+				<p>88-29, Saneop-ro 156beon-gil, Gwonseon-gu, Suwon-si, Gyeonggi-do, Republic of Korea<br>
+					CEO : Jung Joon Yoo | Registration Number : 730-87-00209 <br>
+					Tel : +82-31-270-6300 | E-mail : rocauto@rocauto.co.kr </p>
+
+
+				<script type="text/javascript">
+					< !-
+						//카피라이트의 연도를 당해 연도로 자동으로 업데이트하기 위한 스크립트
+						today=new Date();
+					curYear = today.getFullYear();
+					//-->
+				</script>
+
+				<p class="copy">Copyright ©
+					<script type="text/javascript">document.write(curYear);</script> Roc Auto System All Rights
+					Reserved.
+				</p>
+			</div>
+		</address>
+	</footer>
+
+	<script type="text/javascript">
+		$('dt').click(function () {
+			$(this).next().toggle();
+		})
+	</script>
+</body>
+
+</html>

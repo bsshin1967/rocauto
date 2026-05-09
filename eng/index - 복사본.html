@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+        <!-- 영어 사이트 -->
+	<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="common/html5shiv.js"></script>
+			<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<![endif]-->
+
+	<!-- 최신 IE 렌더링 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<meta charset="utf-8">
+	<!-- 뷰포트 -->
+	<meta name="viewport" content="width=device-width, initial-scale=0.3, minimum-scale=0.2, maximum-scale=1">
+
+	<!--엣지에서 전화번호에 자동으로 링크가 생성되는 현상 방지-->
+	<meta name="format-detection" content="telephone=no" />
+
+	<meta name="Generator" content="EditPlus®">
+	<meta name="Author" content="youngseo yook">
+
+	<title>ROC Auto System</title>
+	<meta name="Description"
+		content="Combined heat and power generator, air compressor, engine type water pump, gas engine, electronic control devices">
+
+	<meta property="og:title" content="ROC Auto System">
+	<meta property="og:description"
+		content="Combined heat and power generator, air compressor, engine type water pump, gas engine, electronic control devices">
+
+	<link rel="stylesheet" type="text/css" href="common/reset.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+	<link rel="stylesheet" type="text/css" href="css/basic.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	<script src="common/jquery-3.2.1.min.js"></script>
+	<script src="js/basic.js"></script>
+
+	<!--bxslider-->
+	<link rel="stylesheet" type="text/css" href="common/bxslider/bxslider.css">
+	<script type="text/javascript" src="common/bxslider/bxslider.js"></script>
+	<script src="js/carousel.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#mainSlide').bxSlider({
+				auto: true,
+				controls: true,
+				pager: false,
+				mode: 'fade',
+				pause: 5000,
+				speed: 500,
+			});
+		});
+	</script>
+
+	<!-- Swiper-->
+	<link rel="stylesheet" href="common/swiper/css/swiper.min.css">
+	<script src="common/swiper/js/swiper.min.js"></script>
+	<style>
+		/* 메인 슬라이드 배경 이미지에 동영상 같은 줌/팬 효과(Ken Burns) 적용 */
+		.bxslider .slide1,
+		.bxslider .slide2,
+		.bxslider .slide3 {
+			position: relative;
+			overflow: hidden;
+			background: none !important;
+			z-index: 1;
+		}
+
+		.bxslider .slide1::before,
+		.bxslider .slide2::before,
+		.bxslider .slide3::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			z-index: -1;
+
+			/* Animation: scale and slow pan to feel like a video */
+			animation: kenburns 30s infinite alternate linear;
+			transition: transform 0.1s ease-out;
+			/* For JS parallax smooth following */
+		}
+
+		.bxslider .slide1::before {
+			background-image: url('images/slide01.jpg');
+		}
+
+		.bxslider .slide2::before {
+			background-image: url('images/slide02.jpg');
+		}
+
+		.bxslider .slide3::before {
+			background-image: url('images/slide03.jpg');
+		}
+
+		@keyframes kenburns {
+			0% {
+				transform: scale(1.0) translate(0, 0);
+			}
+
+			100% {
+				/* Zoom in to 1.3x and move slightly more */
+				transform: scale(1.5) translate(-3%, -3%);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+<!--=====================================================================================-->
+		<nav>
+			<div class="lang">
+				<ul>
+					<li><a href="../kor/index.html">KO</a></li>
+					<li><a href="./index.html">EN</a></li>
+				</ul>
+			</div>
+
+			<h1><a href="index.html"><img src="images/logo.png" alt="알오씨오토시스템 홈페이지 바로가기" /></a></h1>
+
+			<ul class="gnb">
+				<li><a>COMPANY</a>
+					<ul class="snb snb1">
+						<li><a href="com_greeting.html">Greetings</a></li>
+						<li><a href="com_history.html">History</a></li>
+						<li><a href="com_certification.html">Company Patents</a></li>
+						<li><a href="com_location.html">Location</a></li>
+					</ul>
+				</li>
+
+				<li><a>ELECTRIFICATION</a>
+					<ul class="snb snb2">
+						<li><a href="bus01.html">Business Overview</a></li>
+						<li><a href="bus04.html">Products Video</a></li>
+						<li><a href="bus02.html">A/S System</a></li>
+						<li><a href="bus03.html">Partners</a></li>
+						<li><a href="http://excionglobal.com" target="_blank">Sister Company</a></li>
+
+					</ul>
+				</li>
+				<li><a>SOLUTIONS</a>
+					<ul class="snb snb2">
+						<li><a href="solution01.html">Absorption Chiller</a></li>
+						<li><a href="solution02.html">Steam Generator</a></li>
+						<li><a href="solution03.html">Cooling System</a></li>
+						<li><a href="solution04.html">District Heating</a></li>
+						<li><a href="solution05.html">Reference Projects</a></li>
+					</ul>
+				</li>
+				<li><a>PRODUCTS</a>
+					<ul class="snb snb3">
+						<li><a href="product05.html">Products Video</a></li>
+						<li><a href="product01.html">CHP 225kW</a></li>
+						<li><a href="product02.html">CHP 50kW</a></li>
+						<li><a href="product03.html">CHA 300Ps</a></li>
+						<li><a href="product04.html">CHW 50Ps</a></li>
+					</ul>
+				</li>
+				<li><a>SERVICE</a>
+					<ul class="snb snb4">
+						<li><a href="https://rocauto.netlify.app/board/empty.html">Management</a></li>
+						<li><a href="ser_data.html">Archive</a></li>
+						<li><a href="https://rocauto.netlify.app/board/empty.html">Contact us</a></li>
+					</ul>
+				</li>
+			</ul>
+
+		</nav>
+<!--=====================================================================================-->
+		<!--	<div class="snb_bg"></div>-->
+	</header>
+	<section class="slider">
+		<div id="mainSlide" class="bxslider">
+			<div class="slide1">
+				<div>
+					<div>
+						<h3>Eco-friendly and high efficiency<br>energy that leads the future
+
+						</h3>
+						<p>Employees of ROC AUTO SYSTEM will continue to focus on technology development <br>
+							to increase create value creation and endeavor to provide better services to customers. </p>
+						<a href="com_greeting.html" class="more">View Detail →</a>
+					</div>
+				</div>
+			</div>
+			<div class="slide2">
+				<div>
+					<div>
+						<h3>With endless challenges and technology,<br> we will always serve our customers.
+						</h3>
+						<p>ROC AUTO SYSTEM provides customized total solutions for customers <br>
+							including research, design, installation and follow-up services. </p>
+						<a href="com_greeting.html" class="more">View Detail →</a>
+					</div>
+				</div>
+			</div>
+			<div class="slide3">
+				<div>
+					<div>
+						<h3>A leader in the field of<br> energy based on trust.
+						</h3>
+						<p>To contribute to environmental protection and the development of combined heat and power
+							system <br>
+							using gas engine, we constantly contemplate, research and lead the field of energy. </p>
+						<a href="com_greeting.html" class="more">View Detail →</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="black_bar">
+			<div class="bar_inner">
+				<div class="col">
+					<a href="com_greeting.html">
+						<div class="imgbox">
+						</div>
+					</a>
+					<p><a href="com_greeting.html">GREETING</a></p>
+				</div>
+				<div class="col">
+					<a href="com_location.html">
+						<div class="imgbox">
+						</div>
+					</a>
+					<p><a href="com_location.html">LOCATION</a></p>
+				</div>
+				<div class="col">
+					<a href="solution01.html">
+						<div class="imgbox">
+						</div>
+					</a>
+					<p><a href="solution01.html">SOLUTIONS</a></p>
+				</div>
+				<div class="col">
+					<a href="product01.html">
+						<div class="imgbox">
+						</div>
+					</a>
+					<p><a href="product01.html">PRODUCTS</a></p>
+				</div>
+				<div class="col">
+					<a href="http://rocautosystem.com/board/bbs/board.php?bo_table=qa">
+						<div class="imgbox">
+						</div>
+					</a>
+					<p><a href="http://rocautosystem.com/board/bbs/write.php?bo_table=qa">CONTACT US</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="product">
+		<h3>PRODUCTS</h3>
+		<div class="row">
+			<div class="col">
+				<div class="imgbox">
+					<a href="product01.html">
+						<img src="images/pro01.jpg" alt="CHP 225kW">
+					</a>
+				</div>
+				<a href="product01.html">
+					<p>CHP (Combined Heat & Power) – 225kW</p>
+				</a>
+			</div>
+			<div class="col">
+				<div class="imgbox">
+					<a href="product02.html">
+						<img src="images/pro02.jpg" alt="CHP (Combined Heat & Power) – 50kW">
+					</a>
+				</div>
+				<a href="product02.html">
+					<p>CHP (Combined Heat & Power) – 50kW </p>
+				</a>
+			</div>
+			<div class="col">
+				<div class="imgbox">
+					<a href="product03.html">
+						<img src="images/pro03.jpg" alt="CHA (Combined Heat & Air) – 300Ps">
+					</a>
+				</div>
+				<a href="product03.html">
+					<p>CHA (Combined Heat & Air) – 300Ps</p>
+				</a>
+			</div>
+			<div class="col">
+				<div class="imgbox">
+					<a href="product04.html">
+						<img src="images/pro04.jpg" alt="CHW (Combined Heat & Water) – 50Ps">
+					</a>
+				</div>
+				<a href="product04.html">
+					<p>CHW (Combined Heat & Water) – 50Ps</p>
+				</a>
+			</div>
+		</div>
+
+	</section>
+	<!--product_intro-->
+	<section class="benefit">
+		<div class="row">
+			<div class="imgbox"></div>
+			<div class="dsc">
+				<h3>Advantages of the combined heat<br>and power system</h3>
+				<p>
+					1. <b>Provides total Energy Solution</b>of generator, air compressor, refrigerant compressor, <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;and heat circulation pump using gas engine driven energy and thermal
+					energy<br>
+					2. <b>Reduce Energy Cost </b>through optimization for respective business site <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;with various energy types and patterns<br>
+					3. Provides <b>Excellent Energy Efficiency and Economic Efficiency in Maintenance</b><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;by applying web base EMS (Energy Management System)
+				</p>
+			</div>
+		</div>
+	</section>
+	<!--benefit_intro-->
+	<section class="product solution padding-bottom">
+		<h3>SOLUTIONS</h3>
+		<div class="row">
+			<div class="col">
+				<div class="imgbox">
+					<a href="solution01.html">
+						<img src="images/solu01.jpg" alt="CHP 200kW">
+					</a>
+				</div>
+				<a href="solution01.html">
+					<p>Linkage with absorption chiller</p>
+				</a>
+			</div>
+			<div class="col">
+				<div class="imgbox">
+					<a href="solution02.html">
+						<img src="images/solu02.jpg" alt="CHP 200kW">
+					</a>
+				</div>
+				<a href="solution02.html">
+					<p>Linkage with steam generator</p>
+				</a>
+			</div>
+			<div class="col">
+				<div class="imgbox">
+					<a href="solution03.html">
+						<img src="images/solu03.jpg" alt="CHP 200kW">
+					</a>
+				</div>
+				<a href="solution03.html">
+					<p>Linkage with existing cooling system</p>
+				</a>
+			</div>
+			<div class="col">
+				<div class="imgbox">
+					<a href="solution04.html">
+						<img src="images/solu04.jpg" alt="CHP (Combined Heat & Power) – 50kW">
+					</a>
+				</div>
+				<a href="solution04.html">
+					<p>Linkage with district heating</p>
+				</a>
+			</div>
+		</div>
+
+	</section>
+	<!--
+		<section class="area">
+			<h3>SOLUTIONS</h3>
+			<div class="row">
+				<div class="imgbox">
+					<img src="images/area.jpg" alt="business area">
+				</div>
+			</div>
+		</section>
+		-->
+	<!--cus_intro-->
+	<div style="text-align: center; margin: 0 0 80px;">
+		<a href="../video1/video1.html" target="_blank"
+			style="display: inline-block; padding: 15px 50px; background-color: #e50d0d; color: #fff; font-size: 20px; font-weight: bold; border-radius: 5px; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.2); transition: all 0.3s ease;"
+			onmouseover="this.style.backgroundColor='#c40b0b'; this.style.transform='translateY(-2px)'"
+			onmouseout="this.style.backgroundColor='#e50d0d'; this.style.transform='translateY(0)'">Watch Related
+			Video</a>
+	</div>
+	<footer>
+
+		<address class="layout_center">
+			<div>
+				<img src="images/logo_f.png" alt="logo" style="margin-right:20px;" />
+			</div>
+			<div>
+				<p>88-29, Saneop-ro 156beon-gil, Gwonseon-gu, Suwon-si, Gyeonggi-do, Republic of Korea<br>
+					CEO : Jung Joon Yoo | Registration Number : 730-87-00209 <br>
+					Tel : +82-31-270-6300 | E-mail : rocauto@rocauto.co.kr </p>
+
+
+				<script type="text/javascript">
+					< !-
+						//카피라이트의 연도를 당해 연도로 자동으로 업데이트하기 위한 스크립트
+						today=new Date();
+					curYear = today.getFullYear();
+					//-->
+				</script>
+
+				<p class="copy">Copyright ©
+					<script type="text/javascript">document.write(curYear);</script> Roc Auto System All Rights
+					Reserved.
+				</p>
+			</div>
+		</address>
+	</footer>
+
+</body>
+
+</html>
