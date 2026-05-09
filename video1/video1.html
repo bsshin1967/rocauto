@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Drive Video Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+
+        <main class="video-section">
+            <div class="video-wrapper">
+                <video id="my-video" controls preload="metadata">
+                    <source src="video.mp4" type="video/mp4" data-lang="ko">
+                    <source src="video_en.mp4" type="video/mp4" data-lang="en">
+                    <track label="Korean" kind="subtitles" srclang="ko" src="video.vtt" default>
+                    <track label="English" kind="subtitles" srclang="en" src="video_en.vtt">
+                    브라우저가 동영상을 지원하지 않습니다.
+                </video>
+                <button id="lang-toggle-btn" class="lang-toggle" aria-label="Toggle Language">
+                    <span class="lang-text">KR</span>
+                </button>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
